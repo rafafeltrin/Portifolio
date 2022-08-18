@@ -10,3 +10,35 @@ menuMobile.addEventListener('click', () => {
 
     body.classList.toggle("menu-nav-active")
 })
+
+
+/* fecha o menu quando clicar em algum item e mudar o icone*/
+
+const navItem = document.querySelectorAll('.nav-item')
+
+
+navItem.forEach(item => {
+    item.addEventListener("click", () => {
+        if(body.classList.contains("manu-nav-active")){
+            body.classList.remove("menu-nav-active")
+            menuMobile.classList.replace("bi-x", "bi-list")
+        } else {
+            body.classList.toggle("menu-nav-active")
+            menuMobile.classList.replace("bi-x", "bi-list")
+        }
+    })
+})
+
+
+
+
+function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+}
+
+const titulo2 = document.querySelector('span');
+typeWriter(titulo2);
