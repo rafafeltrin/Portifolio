@@ -200,4 +200,40 @@ i.menu-mobile {
     background-color: #eff5ff;
 }
 
+#sobre{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#habilidades{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#portfolio{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
+
+@media (max-width: 500px) {
+    #sobre{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #habilidades{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #portfolio{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 
